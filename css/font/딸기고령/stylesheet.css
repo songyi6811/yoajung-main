@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Goryeong';
+    src: url('font/딸기고령/Goryeong.eot');
+    src: url('font/딸기고령/Goryeong.eot?#iefix') format('embedded-opentype'),
+        url('font/딸기고령/Goryeong.woff2') format('woff2'),
+        url('font/딸기고령/Goryeong.woff') format('woff'),
+        url('font/딸기고령/Goryeong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

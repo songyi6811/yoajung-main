@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Cafe24 Ssurround air';
+    src: url('font/카페써라운드-에어/Cafe24SsurroundairOTF.eot');
+    src: url('font/카페써라운드-에어/Cafe24SsurroundairOTF.eot?#iefix') format('embedded-opentype'),
+        url('font/카페써라운드-에어/Cafe24SsurroundairOTF.woff2') format('woff2'),
+        url('font/카페써라운드-에어/Cafe24SsurroundairOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cafe24 Ssurround air';
+    src: url('font/카페써라운드-에어/Cafe24Ssurroundair.eot');
+    src: url('font/카페써라운드-에어/Cafe24Ssurroundair.eot?#iefix') format('embedded-opentype'),
+        url('font/카페써라운드-에어/Cafe24Ssurroundair.woff2') format('woff2'),
+        url('font/카페써라운드-에어/Cafe24Ssurroundair.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

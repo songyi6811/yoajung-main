@@ -1,0 +1,551 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Cafe24 Ssurround air';
+    src: url('font/카페써라운드-에어/Cafe24SsurroundairOTF.eot');
+    src: url('font/카페써라운드-에어/Cafe24SsurroundairOTF.eot?#iefix') format('embedded-opentype'),
+        url('font/카페써라운드-에어/Cafe24SsurroundairOTF.woff2') format('woff2'),
+        url('font/카페써라운드-에어/Cafe24SsurroundairOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cafe24 Ssurround';
+    src: url('font/카페써라운드/Cafe24SsurroundOTF.eot');
+    src: url('font/카페써라운드/Cafe24SsurroundOTF.eot?#iefix') format('embedded-opentype'),
+        url('font/카페써라운드/Cafe24SsurroundOTF.woff2') format('woff2'),
+        url('font/카페써라운드/Cafe24SsurroundOTF.woff') format('woff'),
+        url('font/카페써라운드/Cafe24SsurroundOTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Goryeong';
+    src: url('font/딸기고령/Goryeong.eot');
+    src: url('font/딸기고령/Goryeong.eot?#iefix') format('embedded-opentype'),
+        url('font/딸기고령/Goryeong.woff2') format('woff2'),
+        url('font/딸기고령/Goryeong.woff') format('woff'),
+        url('font/딸기고령/Goryeong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'Cafe24 Ssurround air';
+}
+.sub_title{
+    width: 100%;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-family: 'Goryeong';
+    font-size: 50px;
+}
+button{
+    font-family: 'Cafe24 Ssurround';
+    color: #fff;
+}
+button:hover{
+    opacity: 0.7;
+}
+
+/* header */
+.header .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo img{
+    width: 200px;
+}
+.header .nav .menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-size: 18px;
+    font-family: 'Cafe24 Ssurround';
+}
+.header .nav .menu li:hover{
+    opacity: 0.5;
+}
+.header .icon{
+    display: flex;
+    gap: 20px;
+}
+.header .icon img{
+    width: 40px;
+}
+
+/* main_visual */
+.main_visual{
+    width: 100%;
+    position: relative;
+    margin-bottom: 200px;
+}
+.main_visual img{
+    width: 100%;
+}
+.main_visual::before{
+    content: '';
+    background: url('../img/메인비주얼-텍스트01.png');
+    width: 524px;
+    height: 134px;
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 100px;
+    transform: translateY(-35%);
+}
+.main_visual::after{
+    content: '';
+    background: url('../img/메인비주얼-텍스트02.png');
+    width: 562px;
+    height: 67px;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 149px;
+    transform: translateY(-55%);
+}
+
+/* .item_wrap */
+.best-menu{
+    width: 100%;
+    margin-bottom: 200px;
+}
+.best-menu .menu_wrap{
+    position: relative;
+}
+.best-menu .swiper{
+    position: static;
+}
+.best-menu .swiper-wrapper{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.best-menu .swiper-wrapper .swiper-slide p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Cafe24 Ssurround';
+}
+.best-menu .swiper-wrapper .swiper-slide:hover img{
+    transform: translateY(-30px) scale(1.1);
+    transition: 0.5s;
+}
+.best-menu .swiper-wrapper .swiper-slide:hover p{
+    font-size: 20px;
+}
+.best-menu .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    transition: 0.5s;
+    filter: drop-shadow(7px 10px #00000042);
+}
+.best-menu .swiper-pagination{
+    bottom: -30px;
+}
+.best-menu .swiper-pagination-bullet-active{
+    background-color: #F73C5A;
+}
+.best-menu .button{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.best-menu .button button{
+    border: none;
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #F73C5A;
+}
+.best-menu .button button:hover{
+    font-family: 'Cafe24 Ssurround';
+}
+
+/* special */
+.special{
+    background: url('../img/special-bg.png') center center no-repeat;
+    width: 100%;
+    height: 749px;
+    margin-bottom: 200px;
+}
+.special .sub_coment{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+.special .sub_coment strong{
+    font-family: 'Cafe24 Ssurround';
+}
+.special .inner{
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+.special .inner .main-img{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.special .inner .main-img::before{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url('../img/special-main01.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.special .inner .sub-img01{
+    position: absolute;
+    bottom: 280px;
+    right: 320px;
+}
+.special .inner .sub-img02{
+    position: absolute;
+    top: -150px;
+    right: 180px;
+    width: 80px;
+}
+.special .inner .sub-img07{
+    position: absolute;
+    top: -20px;
+    right: 280px;
+}
+.special .inner .sub-img11{
+    position: absolute;
+    top: 40px;
+    right: 430px;
+    width: 20px;
+    transform: rotate(90deg);
+}
+.special .inner .sub-img08{
+    position: absolute;
+    bottom: 350px;
+    right: 450px;
+}
+.special .inner .sub-img03{
+    width: 60px;
+    position: absolute;
+    bottom: 220px;
+    right: 200px;
+}
+.special .inner .sub-img04{
+    width: 70px;
+    position: absolute;
+    bottom: 220px;
+    left: 200px;
+}
+.special .inner .sub-img05{
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    width: 80px;
+}
+.special .inner .sub-img06{
+    width: 70px;
+    position: absolute;
+    top: -70px;
+    left: 260px;
+    width: 60px;
+}
+.special .inner .sub-img09{
+    width: 70px;
+    position: absolute;
+    top: -15px;
+    left: 480px;
+    width: 15px;
+}
+.special .inner .sub-img10{
+    width: 70px;
+    position: absolute;
+    top: 100px;
+    left: 280px;
+    width: 15px;
+}
+.special .inner .sub-img12{
+    width: 70px;
+    position: absolute;
+    bottom: 300px;
+    left: 400px;
+    width: 15px;
+}
+.special .inner .sub-img{
+    transition: 0.5s;
+}
+.special .inner .sub-img:hover{
+    transform: rotate(20deg) scale(1.05) translateX(-5px);
+}
+
+/* interview */
+.interview{
+    width: 100%;
+    margin-bottom: 200px;
+}
+.interview .inner{
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.interview .inner .item_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.interview .inner .item_wrap .item:nth-of-type(1){
+    width: 464px;
+    height: 500px;
+    background: url('../img/interview-img01.png') center center no-repeat;
+}
+.interview .inner .item_wrap .item:nth-of-type(2){
+    width: 464px;
+    height: 500px;
+    background: url('../img/interview-img03.png') center center no-repeat;
+}
+.interview .inner .item_wrap .item:nth-of-type(3){
+    width: 464px;
+    height: 500px;
+    background: url('../img/interview-img02.png') center center no-repeat;
+}
+.interview .inner .item_wrap .item .in_title{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-family: 'Goryeong';
+    color: #F73C5A;
+}
+.interview .inner .item_wrap .item .text_wrap{
+    margin-left: 50px;
+}
+.interview .inner .item_wrap .item .text_wrap .text01{
+    margin-bottom: 30px;
+    line-height: 32px;
+    font-size: 20px;
+}
+.interview .inner .item_wrap .item .text_wrap .text01 strong{
+    font-family: 'Cafe24 Ssurround';
+}
+.interview .inner .item_wrap .item .text_wrap .text02{
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.interview .inner .item_wrap .item .text_wrap button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: #F73C5A;
+}
+
+/* event */
+.event{
+    width: 100%;
+    background: url('../img/event-bg.png') center center no-repeat;
+    margin-bottom: 200px;
+}
+.event .sub_title{
+    padding-top: 100px;
+}
+.event .inner{
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.event .inner .item_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.event .inner .item_wrap .item{
+    width: 24%;
+    height: 27vw;
+    background-color: #fff;
+    border: 1px solid #F73C5A;
+    border-radius: 60px;
+    transition: 0.3s;
+}
+.event .inner .item_wrap .item a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.event .inner .item_wrap .item:hover{
+    transform: translateY(-20px);
+}
+.event .inner .item_wrap .item a img{
+    width: 90%;
+    object-fit: cover;
+    border: 1px solid #F73C5A;
+    border-radius: 50px;
+}
+.event .inner .item_wrap .item .coment{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.event .inner .button{
+    width: 100%;
+    text-align: center;
+}
+.event .inner .button button{
+    border: none;
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #F73C5A;
+}
+
+/* search */
+.search{
+    width: 100%;
+    height: 615px;
+    background: url('../img/search-bg.png') center center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.search .sub_title{
+    margin-bottom: 30px;
+}
+.search .sub_coment{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Cafe24 Ssurround';
+}
+.search .inner{
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.search .inner .search_box{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+.search .inner .search_box input{
+    width: 850px;
+    height: 80px;
+    border: 1.5px solid #F73C5A;
+    border-radius: 100px;
+}
+.search .inner .search_box input::placeholder{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 22px;
+    font-family: 'Cafe24 Ssurround air';
+}
+.search .inner .search_box img{
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* insta */
+.insta{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.insta .inner{
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.insta .inner .item_wrap{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.insta .inner .item_wrap .item{
+    width: 15%;
+}
+.insta .inner .item_wrap .item img{
+    width: 100%;
+}
+.insta .inner .id{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.insta .inner .id a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.insta .inner .id a p{
+    font-size: 22px;
+    font-family: 'Cafe24 Ssurround';
+    margin: 0 10px;
+}
+.insta .inner .id a .circle{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: #FFD1D3;
+    border-radius: 50%;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 497px;
+    background: url('../img/footer.png');
+}
+footer .inner{
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 80px;
+}
+footer .inner .logo{
+    margin-right: 30px;
+}
+footer .inner .text{
+    color: #fff;
+    margin-top: 50px;
+}
+footer .inner .text p{
+    margin-bottom: 25px;
+}

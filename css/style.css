@@ -606,6 +606,7 @@ footer .inner .text p{
     }
 
     .main_visual img:nth-of-type(2) {
+        width: 100%;
         display: block;
     }
     .best-menu{

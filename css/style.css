@@ -446,7 +446,7 @@ button:hover{
 /* search */
 .search{
     width: 100%;
-    height: 615px;
+    height: 42.7vw;
     background: url('../img/search-bg.png') center center no-repeat;
     background-size: cover;
     display: flex;

@@ -219,6 +219,9 @@ button:hover{
     position: relative;
     margin-top: 100px;
 }
+.special .inner .main-img img{
+    width: 35%;
+}
 .special .inner .main-img::before{
     content: '';
     width: 400px;
@@ -226,7 +229,7 @@ button:hover{
     background: url('../img/special-main01.png');
     display: block;
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -328,17 +331,17 @@ button:hover{
     justify-content: space-between;
 }
 .interview .inner .item_wrap .item:nth-of-type(1){
-    width: 464px;
+    width: 32%;
     height: 500px;
     background: url('../img/interview-img01.png') center center no-repeat;
 }
 .interview .inner .item_wrap .item:nth-of-type(2){
-    width: 464px;
+    width: 32%;
     height: 500px;
     background: url('../img/interview-img03.png') center center no-repeat;
 }
 .interview .inner .item_wrap .item:nth-of-type(3){
-    width: 464px;
+    width: 32%;
     height: 500px;
     background: url('../img/interview-img02.png') center center no-repeat;
 }
@@ -621,5 +624,80 @@ footer .inner .text p{
     }
     .special .sub_coment{
         font-size: 20px;
+    }
+    .special .inner .main-img img{
+        width: 45%;
+    }
+    .special .inner .sub-img02{
+        top: -70px;
+        right: 50px;
+        width: 65px;
+    }
+    .special .inner .sub-img07 {
+        top: 15px;
+        right: 110px;
+        width: 14px;
+    }
+    .special .inner .sub-img01 {
+        position: absolute;
+        bottom: 140px;
+        right: 140px;
+        width: 60px;
+        transform: rotate(0deg);
+    }
+    .special .inner .sub-img03 {
+        width: 55px;
+        position: absolute;
+        bottom: 70px;
+        right: 50px;
+    }
+    .special .inner .sub-img11 {
+        position: absolute;
+        top: 60px;
+        right: 210px;
+        width: 18px;
+        transform: rotate(70deg);
+    }
+    .special .inner .sub-img08 {
+        position: absolute;
+        bottom: 130px;
+        right: 250px;
+        width: 12px;
+    }
+    .special .inner .sub-img06 {
+        position: absolute;
+        top: -70px;
+        left: 60px;
+        width: 50px;
+    }
+    .special .inner .sub-img05 {
+        position: absolute;
+        top: -20px;
+        left: 130px;
+        width: 65px;
+    }
+    .special .inner .sub-img09 {
+        position: absolute;
+        top: -40px;
+        left: 230px;
+        width: 13px;
+    }
+    .special .inner .sub-img04 {
+        width: 60px;
+        position: absolute;
+        bottom: 80px;
+        left: 130px;
+    }
+    .special .inner .sub-img10 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 15px;
+    }
+    .special .inner .sub-img12 {
+        position: absolute;
+        bottom: 220px;
+        left: 220px;
+        width: 13px;
     }
 }

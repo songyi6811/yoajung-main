@@ -45,6 +45,7 @@ a{
     color: inherit;
 }
 body{
+    color: #333;
     font-family: 'Cafe24 Ssurround air';
 }
 .sub_title{
@@ -68,9 +69,14 @@ button:hover{
     width: calc(100% - 40px);
     height: 100px;
     margin: 0 auto;
+}
+.header .inner .pc{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header .inner .moblie{
+    display: none;
 }
 .header .inner .logo img{
     width: 200px;
@@ -101,10 +107,13 @@ button:hover{
     position: relative;
     margin-bottom: 200px;
 }
-.main_visual img{
+.main_visual img:nth-of-type(1){
     width: 100%;
 }
-.main_visual::before{
+.main_visual img:nth-of-type(2){
+    display: none;
+}
+/* .main_visual::before{
     content: '';
     background: url('../img/메인비주얼-텍스트01.png');
     width: 524px;
@@ -125,7 +134,7 @@ button:hover{
     top: 55%;
     left: 149px;
     transform: translateY(-55%);
-}
+} */
 
 /* .item_wrap */
 .best-menu{
@@ -548,4 +557,68 @@ footer .inner .text{
 }
 footer .inner .text p{
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 960px) {
+    .sub_title{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .best-menu .button button{
+        width: 190px;
+        height: 55px;
+        font-size: 12px;
+    }
+    .header{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .header .inner .pc{
+        display: none;
+    }
+    .header .inner .moblie{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .inner .moblie .logo img{
+        width: 80px;
+    }
+    .header .inner .moblie .menu_icon{
+        width: 35px;
+    }
+    .header .icon{
+        gap: 15px;
+    }
+    .header .inner .moblie .icon img{
+        width: 35px;
+    }
+    .main_visual{
+        margin-bottom: 150px;
+    }
+    .main_visual img:nth-of-type(1) {
+        display: none;
+    }
+
+    .main_visual img:nth-of-type(2) {
+        display: block;
+    }
+    .best-menu{
+        margin-bottom: 150px;
+    }
+    .best-menu .swiper-wrapper .swiper-slide p{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .best-menu .swiper-wrapper .swiper-slide:hover p{
+        font-size: 16px;
+    }
+    .special .sub_coment{
+        font-size: 20px;
+    }
 }

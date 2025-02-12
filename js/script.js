@@ -14,7 +14,7 @@ $(function (){
         disableOnInteraction: false,
       },
       breakpoints: {
-        380: {
+        300: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
